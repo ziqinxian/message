@@ -3,9 +3,9 @@ var gulp=require("gulp"),
     server=require('gulp-webserver');
 
     gulp.task("scss",function(){
-        gulp.src("./scss/style.scss")
+        gulp.src("./public/scss/style.scss")
             .pipe(scss())
-            .pipe(gulp.dest('css'))
+            .pipe(gulp.dest('./public/css'))
     });
 
     gulp.task("server",['start'],function(){
@@ -13,6 +13,7 @@ var gulp=require("gulp"),
             .pipe(server({
                 open: true,
                 livereload: true,
+                port:8989,
                 directoryListing: true
 
             }))

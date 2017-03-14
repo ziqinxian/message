@@ -112,9 +112,10 @@ body{
           }
         }
         .panel-body{
-          padding: 0 0 54px 0;
+          height: 155px;
+          overflow-y: auto;
           span{
-            padding: 0 10px;
+            padding: 0 8px;
             line-height: 28px;
             background: #EEEEEE;
             border: 1px solid #A9A9A9;
@@ -259,4 +260,5 @@ body{
     }
   }
 }
+
 
